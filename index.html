@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OsoolTech - أصول تك | حلول حوكمة وإدارة الأصول التقنية للشركات</title>
-    <!-- خط Cairo من جوجل -->
+    
+    <!-- Google Fonts: Cairo -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome للأيقونات -->
+    
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind Configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -26,6 +31,8 @@
             }
         }
     </script>
+    
+    <!-- Custom Styles -->
     <style>
         body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
         .hero-gradient { background: linear-gradient(135deg, #0b132b 0%, #1c2541 60%, #1e3a8a 100%); }
@@ -34,7 +41,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800">
 
-    <!-- شريط التنقل (Navbar) -->
+    <!-- Navbar -->
     <nav class="bg-brandDark/95 backdrop-blur-md text-white fixed w-full z-50 border-b border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
             <div class="flex items-center gap-3">
@@ -46,24 +53,22 @@
                     <span class="text-xs text-slate-300 font-semibold">أصول تك لإدارة الأصول التقنية</span>
                 </div>
             </div>
+            
+            <!-- Navigation Links -->
             <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-200">
                 <a href="#features" class="hover:text-brandCyan transition">المميزات الفنية</a>
                 <a href="#calculator" class="hover:text-brandCyan transition">حاسبة التوفير</a>
                 <a href="#roadmap" class="hover:text-brandCyan transition">مراحل التنفيذ</a>
                 <a href="#pricing" class="hover:text-brandCyan transition">الباقات والأسعار</a>
             </div>
-            <div>
-                <button onclick="openWhatsApp('مرحباً أصول تك، أرغب في حجز جلسة Live Demo مجانية لنظام إدارة الأصول.')" class="bg-brandBlue hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg shadow-blue-600/30 transition flex items-center gap-2">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>احجز ديمو مجاني</span>
-                </button>
-            </div>
         </div>
     </nav>
 
-    <!-- الواجهة الرئيسية (Hero Section) -->
+    <!-- Hero Section -->
     <section class="hero-gradient text-white pt-32 pb-20 px-4 relative overflow-hidden">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Hero Content -->
             <div>
                 <div class="inline-flex items-center gap-2 bg-blue-500/20 border border-blue-400/30 text-brandCyan px-4 py-1.5 rounded-full text-xs font-bold mb-6">
                     <i class="fa-solid fa-shield-halved"></i>
@@ -85,6 +90,8 @@
                         <span>احسب توفير شركتك</span>
                     </a>
                 </div>
+                
+                <!-- Hero Stats -->
                 <div class="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-slate-700/60 text-center sm:text-right">
                     <div>
                         <span class="text-2xl sm:text-3xl font-black text-brandCyan block">+20%</span>
@@ -101,7 +108,7 @@
                 </div>
             </div>
 
-            <!-- بطاقة محاكاة الداشبورد -->
+            <!-- Dashboard Mockup Card -->
             <div class="glass-card p-6 sm:p-8 rounded-3xl shadow-2xl relative">
                 <div class="flex items-center justify-between mb-6 pb-4 border-b border-white/10">
                     <div class="flex items-center gap-3">
@@ -120,6 +127,8 @@
                         <span class="text-2xl font-black text-brandCyan">99.4% <small class="text-xs text-slate-300 font-normal">توقيع إلكتروني</small></span>
                     </div>
                 </div>
+                
+                <!-- Mockup List Items -->
                 <div class="bg-slate-900/80 p-4 rounded-2xl border border-slate-700 space-y-3 text-xs">
                     <div class="flex justify-between items-center py-2 border-b border-slate-800">
                         <div class="flex items-center gap-3">
@@ -156,7 +165,7 @@
         </div>
     </section>
 
-    <!-- المميزات الفنية للنظام -->
+    <!-- Features Section -->
     <section id="features" class="py-20 px-4 max-w-7xl mx-auto">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <span class="text-brandBlue font-extrabold text-sm">لماذا تختار أصول تك؟</span>
@@ -215,7 +224,7 @@
         </div>
     </section>
 
-    <!-- حاسبة التوفير التفاعلية (ROI Calculator) -->
+    <!-- ROI Calculator Section -->
     <section id="calculator" class="py-16 px-4 bg-brandDark text-white">
         <div class="max-w-5xl mx-auto bg-brandNavy p-8 sm:p-12 rounded-3xl border border-slate-700 shadow-2xl">
             <div class="text-center mb-10">
@@ -225,6 +234,8 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-10 items-center">
+                
+                <!-- Sliders -->
                 <div class="space-y-8">
                     <div>
                         <div class="flex justify-between font-bold mb-2">
@@ -243,6 +254,7 @@
                     </div>
                 </div>
 
+                <!-- Results -->
                 <div class="bg-slate-900/90 p-8 rounded-2xl border border-brandCyan/30 text-center">
                     <span class="text-sm text-slate-400 block mb-2">التوفير السنوي التقديري (منع المشتريات المكررة والفواقد + توفير التراخيص):</span>
                     <div id="savingsDisplay" class="text-4xl sm:text-5xl font-black text-emerald-400 my-4">112,500 ج.م</div>
@@ -256,7 +268,7 @@
         </div>
     </section>
 
-    <!-- خطة العمل ومراحل التنفيذ -->
+    <!-- Roadmap Section -->
     <section id="roadmap" class="py-20 px-4 max-w-7xl mx-auto">
         <div class="text-center max-w-3xl mx-auto mb-14">
             <span class="text-brandBlue font-extrabold text-sm">منهجية عمل احترافية</span>
@@ -291,7 +303,7 @@
         </div>
     </section>
 
-    <!-- الباقات والأسعار (Pricing) -->
+    <!-- Pricing Section -->
     <section id="pricing" class="py-20 px-4 bg-slate-100">
         <div class="max-w-7xl mx-auto">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -301,13 +313,14 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8 items-stretch">
-                <!-- الباقة الأساسية -->
+                
+                <!-- Basic Package -->
                 <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-extrabold text-slate-900">الباقة الأساسية</h3>
                         <p class="text-xs text-slate-500 mt-1">مثالية للشركات التي تمتلك فريق IT جاهز لإدخال البيانات</p>
                         <div class="my-6">
-                            <span class="text-3xl font-black text-slate-900">10,000 - 15,000</span>
+                            <span class="text-3xl font-black text-slate-900">5,000 - 8,000</span>
                             <span class="text-sm font-bold text-slate-500">جنيه مصري</span>
                         </div>
                         <ul class="space-y-3 text-sm text-slate-600 mb-8">
@@ -322,14 +335,14 @@
                     </button>
                 </div>
 
-                <!-- الباقة المتقدمة -->
+                <!-- Advanced Package -->
                 <div class="bg-brandDark text-white rounded-3xl p-8 border-2 border-brandCyan shadow-2xl relative flex flex-col justify-between transform md:-translate-y-4">
                     <span class="absolute -top-4 right-8 bg-brandCyan text-slate-950 text-xs font-black px-4 py-1 rounded-full">الأكثر طلباً للشركات</span>
                     <div>
                         <h3 class="text-xl font-extrabold">الباقة المتقدمة</h3>
                         <p class="text-xs text-slate-300 mt-1">حل متكامل يشمل التأسيس وترحيل البيانات والباركود</p>
                         <div class="my-6">
-                            <span class="text-3xl font-black text-brandCyan">25,000 - 40,000</span>
+                            <span class="text-3xl font-black text-brandCyan">15,000 - 25,000</span>
                             <span class="text-sm font-bold text-slate-300">جنيه مصري</span>
                         </div>
                         <ul class="space-y-3 text-sm text-slate-200 mb-8">
@@ -344,13 +357,13 @@
                     </button>
                 </div>
 
-                <!-- الباقة الاحترافية -->
+                <!-- Enterprise Package -->
                 <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm flex flex-col justify-between">
                     <div>
                         <h3 class="text-xl font-extrabold text-slate-900">الباقة الاحترافية (Enterprise)</h3>
                         <p class="text-xs text-slate-500 mt-1">للشركات الكبرى ومتعددة الفروع (ربط كامل وأتمتة)</p>
                         <div class="my-6">
-                            <span class="text-3xl font-black text-slate-900">+50,000</span>
+                            <span class="text-3xl font-black text-slate-900">+35,000</span>
                             <span class="text-sm font-bold text-slate-500">جنيه مصري</span>
                         </div>
                         <ul class="space-y-3 text-sm text-slate-600 mb-8">
@@ -368,7 +381,7 @@
         </div>
     </section>
 
-    <!-- الفوتر (Footer) -->
+    <!-- Footer -->
     <footer class="bg-brandDark text-slate-400 py-12 px-4 border-t border-slate-800 text-center">
         <div class="max-w-7xl mx-auto">
             <h3 class="text-2xl font-black text-white mb-2">Osool<span class="text-brandCyan">Tech</span> - أصول تك</h3>
@@ -377,16 +390,17 @@
         </div>
     </footer>
 
-    <!-- الأكواد التفاعلية (JavaScript) -->
+    <!-- Scripts -->
     <script>
-        // ضع رقم الواتساب الخاص بك هنا بصيغة دولية بدون علامة +
-        const WHATSAPP_NUMBER = "201000000000";
+        // WhatsApp configuration
+        const WHATSAPP_NUMBER = "201030586539";
 
         function openWhatsApp(message) {
             const encodedMsg = encodeURIComponent(message);
             window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMsg}`, '_blank');
         }
 
+        // ROI Calculation Logic
         function calculateROI() {
             const assets = parseInt(document.getElementById('assetsSlider').value);
             const branches = parseInt(document.getElementById('branchesSlider').value);
@@ -394,7 +408,7 @@
             document.getElementById('assetsCountDisplay').innerText = assets.toLocaleString('ar-EG') + ' جهاز';
             document.getElementById('branchesCountDisplay').innerText = branches.toLocaleString('ar-EG') + (branches === 1 ? ' فرع' : ' فروع');
 
-            // معادلة تقديرية: متوسط توفير 400 ج.م لكل أصل سنوياً + 2500 ج.م لكل فرع من منع الفواقد وتوفير التراخيص
+            // Estimated savings calculation: 400 EGP per asset + 2500 EGP per branch
             const estimatedSavings = (assets * 400) + (branches * 2500);
             const savedHours = Math.round((assets * 0.6) + (branches * 6));
 
@@ -402,6 +416,7 @@
             document.getElementById('hoursDisplay').innerHTML = `بالإضافة إلى توفير حوالي <strong>${savedHours} ساعة عمل سنوياً</strong> لفريق الـ IT في عمليات الجرد اليدوي.`;
         }
 
+        // Action trigger for the ROI section
         function sendROIViaWhatsApp() {
             const assets = document.getElementById('assetsSlider').value;
             const branches = document.getElementById('branchesSlider').value;
